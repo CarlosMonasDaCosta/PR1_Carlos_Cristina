@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_menu_patinetes.xml" value="0.1" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_menu_patinets.xml" value="0.22" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_sign_iin.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_sign_in.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_sign_up.xml" value="0.5" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_sign_up2.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/fragment_red.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/fragment_title.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/fragment_verde.xml" value="0.14130434782608695" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
