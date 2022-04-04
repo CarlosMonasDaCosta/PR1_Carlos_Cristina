@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     fun startTimer(){
         object: CountDownTimer(3000,1000){
             override fun onTick(p0: Long) {
-
             }
 
             override fun onFinish() {
