@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_menu_patinets.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_prova_frag_nav1.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/fragment_patinets_disponibles.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/nav_header.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Carlos/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/menu/navdrawer_menu.xml" value="0.1" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/PR1_Carlos_Cristina/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
       </map>
     </option>

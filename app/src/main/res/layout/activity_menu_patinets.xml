@@ -1,28 +1,20 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
 
-
-
-    <fragment
-        android:id="@+id/izquierda"
-        android:name="com.example.pr1_carlos_cristina.RedFragment"
-        android:layout_width="match_parent"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="2"
-        tools:layout="@layout/fragment_red" />
+        android:layout_gravity="start"
+        app:menu="@menu/navdrawer_menu"
+        app:headerLayout="@layout/nav_header"
+        />
 
-    <fragment
-        android:name="com.example.pr1_carlos_cristina.FragmentVerde"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:id="@+id/derecha"
-        tools:layout="@layout/fragment_verde" />
-
-
-
-</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
