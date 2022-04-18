@@ -1,12 +1,14 @@
 package com.example.pr1_carlos_cristina
 
+import AdaptadorPatinets
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-
+import androidx.databinding.DataBindingUtil.setContentView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,20 +26,40 @@ class Patinets_disponibles : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    var listaPersonajes: ArrayList<PatinetsVo>? = null
+    var recyclerPersonajes: RecyclerView? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+    }
+
+    private fun llenarPersonajes() {
+        listaPersonajes!!.add(PatinetsVo("Scotter1", "", R.drawable.patin_e1))
+        listaPersonajes!!.add(PatinetsVo("Scooter2", "", R.drawable.patin_e1))
+        listaPersonajes!!.add(PatinetsVo("Scooter3", "", R.drawable.patin_e1))
+        listaPersonajes!!.add(PatinetsVo("Scooter4", "", R.drawable.patin_e1))
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        var root = view
+        root = inflater.inflate(R.layout.fragment_patinets_disponibles,container,false)
+        listaPersonajes = ArrayList()
+        recyclerPersonajes = root.findViewById<View>(R.id.RecyclerId) as RecyclerView
+        recyclerPersonajes!!.layoutManager = LinearLayoutManager(context)
+        llenarPersonajes()
+        val adapter = AdaptadorPatinets(listaPersonajes!!)
+        recyclerPersonajes!!.adapter = adapter
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_patinets_disponibles, container, false)
+        return root
     }
 
     companion object {
