@@ -10,14 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PR1_Carlos_Cristina">
         <activity
+            android:name=".Detail"
+            android:exported="false" />
+
+        <activity
             android:name=".nav_header"
             android:exported="false" />
         <activity
             android:name=".MenuPatinets"
             android:exported="false" />
-        <activity
-            android:name=".ProvaFragNav1"
-            android:exported="false" />
+
         <activity
             android:name=".SignIn"
             android:exported="false" />

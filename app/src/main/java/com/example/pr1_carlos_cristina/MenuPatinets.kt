@@ -1,12 +1,13 @@
 package com.example.pr1_carlos_cristina
 
 import android.content.res.Configuration
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
@@ -16,6 +17,10 @@ class MenuPatinets : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var navigationView: NavigationView? = null
     var toolbar: Toolbar? = null
     var toggle: ActionBarDrawerToggle? = null
+
+    var listaFragment: Patinets_disponibles?=null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_patinets)
@@ -82,6 +87,8 @@ class MenuPatinets : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             true
         } else super.onOptionsItemSelected(item)
     }
+
+
 }
 
 
